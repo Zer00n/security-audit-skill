@@ -1,5 +1,7 @@
 # security-audit
 
+[简体中文](README.zh-CN.md)
+
 A coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agents through reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and target-neutral reporting.
 
 This is the skill that seeded Cloudflare's vulnerability discovery harness, described in [Build your own vulnerability harness](https://blog.cloudflare.com/build-your-own-vulnerability-harness). The harness grew into a multi-stage, fleet-wide system; this skill is the single-repo starting point it evolved from.
@@ -45,6 +47,8 @@ Multiple runs against the same repo are additive. The skill uses prior ledgers a
 | `validate-findings.test.cjs` | Findings-validator tests and producer-compatible fixture checks |
 | `validate-coverage-ledger.cjs` | Zero-dependency validator for `coverage-ledger.json` in Phases 1–5 |
 | `validate-coverage-ledger.test.cjs` | Coverage-ledger validator tests |
+
+Chinese translations of the Markdown docs above live as `*.zh-CN.md` siblings. A synthesized Chinese handbook is at [`docs/最佳实践手册.md`](docs/最佳实践手册.md).
 
 ## Installation
 
